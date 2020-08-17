@@ -2,14 +2,6 @@
 
 ## Overview
 
-In this guide, you will learn how to secure your Firebase real-time database using Firebase Rules. Rules are a JSON and JavaScript based system that allow you to restrict database access to certain tags and/or users.
-
-You will be making a simple app that lets users sign in with Firebase Authentication and saves their data in the real-time database. Then, you will write some rules to prevent others from accessing sensitive user data.
-
-## Pre-requisites
-Here are some things you should know before you can get started with this guide.
-
- * Working with Firebase Database and Authentication
  * Working with Firebase Rules
 
 !!! caution
@@ -45,22 +37,6 @@ Here is what our database will look like:
 		- email
 		- android_version
 	- uids
-```
-
-`uids` will be an array of all unique ids that are in the database. We will use this tag later to iterate through all users and get their names.
-
-That's all the Firebase for now. Let's move to building your app. We'll come back to the Firebase console later to write the rules.
-
-## Designing the app
-
-As usual, we'll start with a new project. We will need three buttons for this project - one to sign the user in, another to send their details to the database, and one more to fetch the names of all users in the database. Drag and drop three `Button` components and name them `SignInButton`, `UpdateDetailsButton`, and `GetDetailsButton`.
-
-Next, drop a `Text Box` where the user will be able to enter their name.
-
-Then, add a `Notifier` component and rename it to `MessageNotifier`. We will use this component to display the names of all users.
-
-Finally, drop the `Firebase Database`, `Firebase Authentication`, and `Device Utilities` components. The `Device Utilities` component will be used to fetch the Android version of the user's device.
-
 !!! warning
 		You will have to upload the `google-services.json` file to Assets to be able to export your app. This file can be obtained from your Firebase Console.
 
@@ -71,7 +47,7 @@ This is what your designer should look like
 !!! tip
 		The components shown above have been styled with colors and borders to make them look better. Download AIA from the bottom of the page to use them in your app!
 
-## Coding the blocks
+## Coding the blockssxewqasdwec3e3
 
 First, we add an event block to handle clicks on the `SignInButton`. The user is to be shown a prompt to sign in with Google.
 
